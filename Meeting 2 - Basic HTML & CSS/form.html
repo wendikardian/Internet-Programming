@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0e17752b2.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="Information carousel_Two Color.png" alt="">
+            <h1>My Website</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="form.html">Form</a>
+            <a href="about.html">about</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="picture-container" data-aos="fade-up">
+            <img src="Information flow_Two Color.png" alt="">            
+        </div>
+        <div class="container" data-aos="fade-right">
+            <h1>Form Buku Tamu</h1>
+            <div class="form-container">
+                <form action="">
+                    <div class="input-con">
+                        <label for="">Name</label>
+                        <br>
+                        <input type="text" placeholder="name" required>
+                    </div>
+                    <div class="input-con">
+                        <label for="">Email</label>
+                        <br>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-con">
+                        <label for="">Website</label>
+                        <br>
+                        <input type="text" placeholder="Your website address">
+                    </div>
+                    <div class="input-con">
+                        <label for="">Your fav genre movie</label>
+                        <br>
+                        <input type="radio" name="film" value="horror" checked>
+                        <label for="">Horror</label>
+                        <br>
+                        <input type="radio" name="film" value="comedy" id="">
+                        <label for="">Comedy</label>
+                        <br>
+                        <input type="radio" name="film" value="drama" id="">
+                        <label for="">Drama</label>
+                    </div>
+                    <div class="input-con">
+                        <label for="">Your favorite platform</label>
+                        <br>
+                        <input type="checkbox" name="platform" value="webtv" checked>
+                        <label for="">Web TV</label>
+                        <br>
+                        <input type="checkbox" name="platform" value="tv" id="">
+                        <label for="">Normal TV</label>
+                        <br>
+                        <input type="checkbox" name="platform" value="vccd" id="">
+                        <label for="">Video VCD/DVD</label>
+                    </div>
+                    <div class="input-con">
+                        <label for="">Gender</label>
+                        <br>
+                        <select name="categoria" onchange="">
+                            <option value="none" selected>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
+                    </div>
+                    <div class="input-con">
+                        <input type="submit" value="Kirim">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="left">
+                <p><i class="fab fa-instagram-square"></i> IG : taylucifer</p>
+            </div>
+            <div class="right">
+                <p><i class="fab fa-whatsapp-square"></i>  WA : 089542212123521</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>@copyright &copy; Wendi kardian</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

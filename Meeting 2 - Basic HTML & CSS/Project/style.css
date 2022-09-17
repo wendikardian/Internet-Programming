@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    background-color: #B1E1FF;
+    justify-content: space-around;
+    padding: 5px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+
+.color-navbar {
+    background-color: #B1E1FF;
+}
+
+.white-navbar {
+    background-color: white;
+}
+
+.left-header img {
+    width: 50px;
+    height: 50px;
+}
+
+.left-header {
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #db779ac2;
+    transition: 0.5s ease-in-out;
+}
+
+header a:hover {
+    color: #f6095c;
+}
+
+.pink {
+
+    color: #f6095c;
+}
+
+.blue-text {
+    color: #607EAA;
+}
+
+.text-jumbotron {
+    padding: 50px;
+    position: relative;
+    bottom: 200px;
+}
+
+.just-blue {
+    height: 200px;
+    background-color: #B1E1FF;
+}
+
+.jumbotron {
+    /* margin-top: 30px; */
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url('assets/wave.svg');
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.banner img {
+    width: 800px;
+    position: relative;
+    bottom: 200px;
+    animation: imageJumbotron 3s alternate infinite;
+    /* top: 100px; */
+}
+
+@keyframes imageJumbotron {
+    0% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+.text-jumbotron h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+button {
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+    transition: 1s;
+    background-size: 200% auto;
+    display: block;
+}
+
+button:hover {
+    cursor: pointer;
+    background-position: right center;
+}
+
+.section-slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+
+.image-slider{
+    position: relative;
+    width: 640px;
+    height: 426px;
+}
+
+.slide{
+    width: 100%;
+    position: absolute;
+    clip-path: circle(0% at 0 50%);
+}
+
+.slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.slider-btn.active{
+    background-color:  rgb(38,70,83)
+}
+
+.slide img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.slide-text{
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    background-color: rgba(220, 220, 220, 0.609);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.slide-tet h2{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-text p{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation{
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-btn{
+    background-color: rgb(151,151,151);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.title-section{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title-all{
+    display: flex;
+    justify-content: center;
+}
+
+.line-title{
+    /* border:none; */
+    /* border: 0 none; */
+    /* height: 1px; */
+    /* width: 30px; */
+}
+.more{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px;
+}
+
+.more img{
+    animation: imageJumbotron 3s alternate infinite;
+}
+
+.more-detail{
+    width:  400px;  
+}
+
+.more-detail h1{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
