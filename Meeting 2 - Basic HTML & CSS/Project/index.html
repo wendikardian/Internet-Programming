@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/header.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f0e17752b2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Wens Blog</title>
 </head>
@@ -16,18 +17,41 @@
             <h3> <span class="blue-text"> Wen's</span> Blog</h3>
         </div>
         <nav>
-            <a href="#home">Home</a>
-            <a href="">My Project</a>
-            <a href="">Contact</a>
-            <a href="">About Me</a>
+            <div class="dropdown">
+                <a href="#home"> Home <i class="fa-solid fa-angle-down"></i> </a>
+                <div class="dropdown-content" class="a-drop">
+                    <a href="index.html#jumbotron" >Home</a>
+                    <a href="index.html#slider" >Discover</a>
+                    <a href="index.html#services" >Services</a>
+                  </div>
+            </div>
+            <a href="project.html">My Project</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Me</a>
         </nav>
+        <div class="side-bar">
+            <i class="fa-solid fa-arrow-down-wide-short"></i>
+            <div class="nav-drop">
+                <div class="dropdown">
+                    <a href="#home"> Home <i class="fa-solid fa-angle-down"></i> </a>
+                    <div class="dropdown-content" class="a-drop">
+                        <a href="index.html#jumbotron" >Home</a>
+                        <a href="index.html#slider" >Discover</a>
+                        <a href="index.html#services" >Services</a>
+                      </div>
+                </div>
+                <a href="project.html">My Project</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About Me</a>
+            </div>
+        </div>
     </header>
     <main>
-        <div class="just-blue"></div>
-        <section class="jumbotron">
+        <div class="just-blue" id="jumbotron"></div>
+        <section class="jumbotron" >
             <div class="text-jumbotron">
                 <h1>Discover <u class="blue-text">Wendi</u></h1>
-                <p data-aos="fade-up">Hello There Wanna See Who I am, u can scroll it below. I'm a Collage Student from Universitas Pendidikan Indonesia Majoring in <span class="pink"> Computer Science Education</span></p>
+                <p data-aos="fade-up">Hello There Wanna See Who I am, u can scroll it below. I'm a Collage Student from Universitas Pendidikan Indonesia Majoring in <span class="pink"> Computer Science Education</span> and also i'm a <span class="blue-text"> Teacher </span>Too</p>
                 <button>Click Here!</button>
             </div>
             <div class="banner">
@@ -35,8 +59,9 @@
             </div>
         </section>
         <div class="title-all">
-            <h1 class="title-section">Discover Here</h1>
+            <h1 class="title-section" data-aos="fade-right">Discover <span class="pink"> Here </span></h1>
         </div>
+       
         <section id="slider" class="section-slider">
             <div class="image-slider">
                 <div class="slide active">
@@ -88,12 +113,95 @@
             <img src="assets/rocket.png" alt="">
             <div class="more-detail">
                 <h1> <span class="blue-text"> Let's see </span> how it's <span class="pink"> Going </span></h1>
-                <p>“Let us take you into a deeper experience, make a moment a lasting conveyable memory. Let us help build your tribe.”</p>
+                <p data-aos="fade-left">“Let us take you into a deeper experience, make a moment a lasting conveyable memory. Let us help build your tribe.”</p>
                 <button>Say Hi !!!</button>
             </div>
         </section>
+        <div class="title-all">
+            <h1 class="title-section" data-aos="fade-right">My <span class="pink"> Core</span> Services</h1>
+        </div>
+        <section class="services" id="services">
+            <div class="service-item">
+                <img src="assets/Mobile Testing_Monochromatic.png" alt="">
+                <h4> <span class="pink"> Apps</span> Development</h4>
+                <p>Using React Native you can create a wonderful Apps. Let us take you into a deeper experience, make a moment a lasting conveyable memory. Let us help build your tribe</p>
+            </div>
+            <div class="service-item">
+                <img src="assets/Web Developer_Monochromatic.png" alt="">
+                <h4><span class="pink">Web</span> Development</h4>
+                <p>Using React, Laravel, Express.JS, Next.JS, Vue.JS You can create amazing Website.Web design is not just about creating pretty layouts. It’s about understanding the marketing challenge behind your business</p>
+            </div>
+            <div class="service-item">
+                <img src="assets/Artifical inteligence_Monochromatic.png" alt="">
+                <h4><span class="pink">AI</span> Development</h4>
+                <p>Using Python You can create a smart system. Python, like many good technologies, soon spreads virally throughout your development team and finds its way into all sorts of applications and tools</p>
+            </div>
+            <div class="service-item">
+                <img src="assets/Computer display_Two Color.png" alt="">
+                <h4><span class="pink">Cyber</span> Security</h4>
+                <p>Data is the pollution problem of the information age, and protecting privacy is the environmental challenge. As a matter of fact, yeah, they were foolproof. The problem is that you don't have to protect yourself against fools. You have to protect yourself against people like me. </p>
+            </div>
+            <div class="service-item">
+                <img src="assets/Data Arranging_Monochromatic.png" alt="">
+                <h4>Big<span class="pink"> Data</span></h4>
+                <p>Hiding within those mounds of data is knowledge that could change the life of a patient, or change the world. Information is the oil of the 21st century, and analytics is the combustion engine </p>
+            </div>
+            <div class="service-item">
+                <img src="assets/Group Video Call_Monochromatic.png" alt="">
+                <h4><span class="pink">Video</span> Editing</h4>
+                <p>Video editing is a form of art where the editors assemble several video shots to create a whole new piece of work. Video editing is indeed one of the coolest occupations out there. But mind you, it's no piece of cake. </p>
+            </div>
+            <div class="service-item">
+                <img src="assets/Teacher_Monochromatic.png" alt="">
+                <h4><span class="pink">Curriculum</span> Developer</h4>
+                <p>"Better than a thousand days of diligent study is one day with a great teacher." "Your heart is slightly larger than the average human heart, but that's because you're a teacher." </p>
+            </div>
+            <div class="service-item">
+                <img src="assets/Designer _Monochromatic.png" alt="">
+                <h4><span class="pink">Design</span> Graphics</h4>
+                <p>“The alternative to good design is always bad design. There is no such thing as no design.” Good design’s not about what medium you’re working in. It’s about thinking hard about what you want to do and what you have to work with before you start</p>
+            </div>
+        </section>
+        <section id="ending" class="ending">
+            <div class="ending-img" data-aos="fade-right">
+                <img src="assets/ending.png" alt="">
+            </div>
+            <div class="ending-text" data-aos="fade-left">
+                <h1>We don't just build <span class="blue-text"> websites </span>, we build websites that <span class="pink"> SELLS</span></h1>
+                <hr>
+                <p>Learning HTML and CSS is a lot more challenging than it used to be. Responsive web design adds more layers of complexity to design and develop websites. Your website is the center of your digital eco-system, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door</p>
+                <button>See Services</button>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="contact">
+            <div class="contact-item">
+                <h3 class="pink">Company</h3>
+                <hr>
+                <p>Home</p>
+                <p>Services</p>
+                <p>Portfolio</p>
+            </div>
+            <div class="contact-item">
+                <h3 class="pink">About</h3>
+                <hr>
+                <p>About Us</p>
+                <p>Blog</p>
+                <p>My Contack</p>
+            </div>
+            <div class="contact-item">
+                <h3 class="pink">Social Media</h3>
+                <hr>
+                <p> <i class="fab fa-instagram"></i> Taylucifer</p>
+                <p> <i class="fab fa-whatsapp"></i> 089542251289</p>
+                <p> <i class="fab fa-linkedin-in"></i> Wendi Kardian</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2022 Wendi Kardian, all rights reserved.</p>
+        </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>

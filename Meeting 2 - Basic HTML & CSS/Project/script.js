@@ -1,3 +1,13 @@
+
+function offsetAnchor() {
+    if(location.hash.length !== 0) {
+        window.scrollTo(window.scrollX, window.scrollY - 100);
+    }
+}
+
+window.addEventListener("hashchange", offsetAnchor);
+window.setTimeout(offsetAnchor, 1); 
+
 var myNav = document.querySelector('header');
 window.onscroll = function () { 
     console.log(document.body.scrollTop)
@@ -59,4 +69,11 @@ var repeat = function(activeClass){
 
 repeat()
 
+
+var itemVideo = document.querySelectorAll('.service-item');
+itemVideo.forEach((video, index) => {
+    video.dataset.aos = 'fade-down';
+    video.dataset.aosDuration = 1500;
+    video.dataset.aosDelay = index*300;
+})
 AOS.init();
