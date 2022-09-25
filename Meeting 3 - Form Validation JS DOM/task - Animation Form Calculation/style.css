@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-repeat: no-repeat;
+}
+
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.form-container{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border-radius: 40px;
+    padding: 45px;
+    margin-left: 40px;
+}
+
+.form-title{
+    color: white;
+    border-bottom: 1px solid rgb(231, 47, 244);
+    margin-bottom: 40px;
+}
+
+.input-con{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    /* color: white; */
+}
+
+input[type="text"], input[type="number"], input[type="email"]{
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid white;
+    width: 60%;
+    margin-left: 20px;
+    color: white;
+}
+
+label{
+    min-width: 30%;
+    color: darkblue;
+}
+
+.radio-input{
+    margin-left: 20px;
+    color: white;
+    margin-top: 15px;
+}
+
+.radio-input input{
+    margin-right: 20px;
+}
+
+.radio-input label{
+    color: white;
+}
+
+button, input[type="reset"]{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    background-size: 200%;
+    color: white;
+    transition: 1s;
+}
+
+button:hover{
+    background-position: right center;
+}
+
+
+.modal{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.384);
+    z-index: 99;
+    display: none;
+}
+
+.box-modal{
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    top: 50%;
+    right: 30%;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+p.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+p.close:hover{
+    cursor: pointer;
+}
+
+.result-data{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    padding: 30px;
+    margin: 50px;
+    border-radius: 20px;       
+    display: none;
+}
+
+.result-data img{
+    width: 300px;
+    margin-left: 40%;
+    margin-bottom: 50px;
+    /* margin-right: auto; */
+}
+
+.result-info{
+    display: flex;
+    color: white;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.right{
+    margin-left: 50px;
+}
+
+.additional{
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+
+.box-modal img{
+    width: 100px;
+}

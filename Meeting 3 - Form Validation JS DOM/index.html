@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="contact-container">
+            <div class="ilustration" data-aos="fade-left">
+                <img src="assets/form-img.png" width="400px" alt="" class="illustration-img">
+            </div>
+            <div class="form">
+                <img src="assets/Artifical inteligence_Monochromatic.png" alt="" class="profile-contact-img">
+                <h1>Contact Me</h1>
+                <p>Please feel free to contact me</p>
+                <h4>Your Information</h4>
+                <form name="form-contact" autocomplete="off" >
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" class="next">
+                    <div class="form-container">
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" class="input-item" name="name" id="name" value="hello" placeholder=" ">
+                                <label for="name" class="form-label">Name</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" class="input-item" name="city" id="city" placeholder=" ">
+                                <label for="city" class="form-label">City</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-envelope-open"></i>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" class="input-item" name="email" id="email" placeholder=" ">
+                                <label for="email" class="form-label">Email</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="form-input">
+                                <label for="message" class="form-label"
+                                    style="margin-bottom:20px;top:-5px;">Message</label>
+                                <textarea class="textarea" type="text" name="message" id="message" cols="20" rows="10"
+                                    placeholder=" "></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button"  class="submit" onclick="formClick()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

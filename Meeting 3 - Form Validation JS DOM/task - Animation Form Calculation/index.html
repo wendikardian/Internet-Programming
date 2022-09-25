@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/customer.png" type="image/x-icon">
+    <title>HomeComing TV</title>
+</head>
+<body>
+    <div class="container-form">
+        <div class="img-container">
+            <img src="assets/tv.png" alt="">
+        </div>
+        <div class="form-container">
+            <form action="">
+                <h1 class="form-title">HomeComing TV Cable Subscription</h1>
+                <div class="input-con">
+                    <label for="nama">Full Name: </label>
+                    <input type="text" id="fullname" required>
+                </div>
+                <div class="input-con">
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-con">
+                    <label for="phone">Phone Number: </label>
+                    <input type="number" id="phone" required>
+                </div>
+                <div class="input-con">
+                    <label for="radio">Choose Your Primary Package</label>
+                </div>
+                <div class="input-con radio-input">
+                    <input type="radio" id="package1" name="package" value="500" checked>
+                    <label for="package">Premium Package (England Soccer and more 50 Channels)</label>
+                </div>
+                <div class="input-con radio-input">
+                    <input type="radio" id="package2" value="250" name="package">
+                    <label for="package">Silver Package (England Soccer and more 25 Channels)</label>
+                </div>
+                <div class="input-con radio-input">
+                    <input type="radio" id="package3" value="150" name="package">
+                    <label for="package">Basic Package (25 Channels)</label>
+                </div>
+                <div class="input-con">
+                    <label for="radio">Additional Package</label>
+                </div>
+                <div class="input-con radio-input">
+                    <input type="checkbox" id="additional1" name="additional" value="music">
+                    <label for="package">Music Channel (MTV)</label>
+                </div>
+                <div class="input-con radio-input">
+                    <input type="checkbox" id="additional2" name="additional" value="anime">
+                    <label for="package">Anime</label>
+                </div>
+                <div class="input-con radio-input">
+                    <input type="checkbox" id="additional3" name="additional" value="religion">
+                    <label for="package">Religion</label>
+                </div>
+
+                <button type="button" onclick="submitData()" >Submit</button>
+                <input type="reset">
+            </form>
+        </div>
+    </div>
+    <div class="result-data">
+        <h1 style="margin-left: 40%;">Thanks for believing in Us</h1>
+        <img src="assets/customer.png" alt="">
+        <div class="result-info">
+            <h2 >Name : </h2>
+            <h2 class="name-result">Wendi Kardian</h2>
+        </div>
+        <div class="result-info">
+            <h2>Email : </h2>
+            <h2 class="email-result">wendikardian@gmail.com</h2>
+        </div>
+        <div class="result-info">
+            <h2>Phone : </h2>
+            <h2 class="phone-result">087822*951+65</h2>
+        </div>
+        <div class="result-info">
+            <h2>Selected Package : </h2>
+            <h2 class="selected-result">087822*951+65</h2>
+        </div>
+        <div class="result-info column">
+            <h2>Additional package (Each item = Rp. 50.000) : </h2>
+            <br>
+            <ul class="additional right">
+                <!-- <li>Anime</li> -->
+            </ul>
+            <h2 class="total-add">Total Additional </h2>
+        </div>
+        <div class="result-info">
+            <h2>Total Payment  : Rp.</h2>
+            <h2 class="total-payment">087822*951+65</h2>
+            
+        </div>
+        <button onClick="again()" style="margin-left: 40%;">Another Form</button>
+    </div>
+    <div class="modal">
+        <div class="box-modal">
+            <p class="close" onclick="display()">x</p>
+            <h1>Thanks for submitting </h1>
+            <img src="assets/customer.png" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
