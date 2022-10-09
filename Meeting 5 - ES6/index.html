@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, let's exercise</h1>
+    <script>
+        class Segitiga{
+            alas = 0
+            tinggi = 0
+            sisi = 0
+            constructor(alas, tinggi, sisi){
+                this.alas = alas
+                this.tinggi = tinggi
+                this.sisi = sisi
+            }
+            getLuas = () => {
+                return this.alas * this.tinggi;
+            }
+            getKeliling = () => {
+                return this.sisi*3;
+            }
+            setAlas = (a) => {
+                this.alas = a
+            }
+        }
+
+
+        class PersegiPanjang{
+            panjang = 0
+            lebar = 0
+            constructor(p, l){
+                this.panjang = p
+                this.lebar = l
+            }
+            getLuas = () => {
+                return this.panjang *  this.lebar
+            }
+            getKeliling = () =>{
+                return 2*(this.panjang + this.lebar)
+            }
+        }
+
+
+        class JajarGenjang{
+            alas = 0
+            tinggi = 0
+            miring = 0
+            constructor(a,t,m){
+                this.alas = a
+                this.tinggi = t
+                this.miring = m
+            }
+            getLuas = () => {
+                return this.alas * this.tinggi
+            }
+            getKeliling = () => {
+                return 2*this.alas + 2*this.miring
+            }
+        }
+
+        const segitiga1 = new Segitiga(5,4,3)
+        document.write("Luas segitiga pertama : " + segitiga1.getLuas())
+        document.write("<br>")
+        document.write("Keliling segitiga pertama : " + segitiga1.getKeliling())
+        document.write("<br>")
+        
+        
+        const pp1 = new PersegiPanjang(10,20);
+        const pp2 = new PersegiPanjang(50,40);
+        
+        document.write("Luas Persegi Panjang :" + pp2.getLuas())
+        document.write("<br>")
+        document.write("Keliling Persegi Panjang :" + pp2.getKeliling())
+        document.write("<br>")
+        
+        const  jj1 = new JajarGenjang(10,20,4)
+        const  jj2 = new JajarGenjang(20, 50, 30)
+        document.write("Keliling Jajar Genjang : " + jj1.getKeliling())
+        document.write("<br>")
+        document.write("Luas Jajar Genjang : " +jj1.getLuas())
+        document.write("<br>")
+
+        // const luasSegitiga = (alas, tinggi) => {
+        //     return alas*tinggi/2
+        // }
+
+        // const kelilingSeigitiga = sisi => {
+        //     return sisi*3
+        // }
+
+        // const luasPersegiPanjang = (panjang, lebar) => {
+        //     return panjang * lebars
+        // }
+
+        // const 
+
+    </script>
+</body>
+</html>
